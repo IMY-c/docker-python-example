@@ -1,5 +1,5 @@
 FROM python:3
-WORKDIR /usr/src/app
+WORKDIR /Users/ivan/Documents/Iván/Code/docker-python-example-master/build
 COPY Pipfile ./
 RUN pip install --no-cache-dir pipenv==2020.11.15 && pipenv install
 COPY app.py .
